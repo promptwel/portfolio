@@ -617,15 +617,15 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
       <div class="projects__filter">
         <button class="projects__filter-btn active" data-filter="all">All</button>
         <button class="projects__filter-btn" data-filter="backend">Backend</button>
-        <button class="projects__filter-btn" data-filter="mobile">Mobile</button>
+        <button class="projects__filter-btn" data-filter="mobile">Mobile &amp; Desktop</button>
         <button class="projects__filter-btn" data-filter="frontend">Frontend</button>
         <button class="projects__filter-btn" data-filter="ai">AI/ML</button>
         <button class="projects__filter-btn" data-filter="iot">IoT</button>
       </div>
       <div class="projects__grid">
         <div class="project-card" data-category="mobile">
-          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 5"><span>RQ</span></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="0">View Details</button></div></div>
-          <div class="project-card__body"><span class="project-card__tag">Mobile</span><h3 class="project-card__title">RESQ — MDRRMO Dispatch</h3><p class="project-card__desc">One-tap emergency reporting for citizens, with a responder app and a desktop dispatch desk for the town MDRRMO.</p><div class="project-card__tech"><span>React Native</span><span>Firebase</span><span>Python</span></div></div>
+          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 5"><img src="resq-logo.png" alt="RESQ logo" width="96" height="96" style="border-radius:22px;box-shadow:0 4px 14px rgba(0,0,0,.25)"></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="0">View Details</button></div></div>
+          <div class="project-card__body"><span class="project-card__tag">Mobile &amp; Desktop</span><h3 class="project-card__title">RESQ — MDRRMO Dispatch</h3><p class="project-card__desc">One-tap emergency reporting for citizens on Android, plus a Windows desktop dispatch desk for the town MDRRMO.</p><div class="project-card__tech"><span>React Native</span><span>Firebase</span><span>Python</span></div></div>
         </div>
         <div class="project-card" data-category="iot">
           <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 190"><span>DH</span></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="1">View Details</button></div></div>
@@ -1007,7 +1007,7 @@ const modalClose = modal.querySelector('.modal__close');
 const modalBackdrop = modal.querySelector('.modal__backdrop');
 
 const projectsData = [
-  { title: 'RESQ — MDRRMO Dispatch', category: 'Mobile', initials: 'RQ', hue: 5, description: "An emergency reporting and dispatch system for a municipal disaster office (MDRRMO). Citizens send a report with their GPS location in one tap, responders get the nearest assignment with a live ETA, and the dispatch desk sends area warnings and tracks hazards. Three parts share one Firebase project: a citizen app, a responder app, and a Windows desktop dispatch desk.", tech: ['React Native', 'Expo', 'Firebase', 'Cloud Functions', 'Python', 'PyQt6'] },
+  { title: 'RESQ — MDRRMO Dispatch', category: 'Mobile & Desktop', initials: 'RQ', logo: 'resq-logo.png', hue: 5, description: "An emergency reporting and dispatch system for a municipal disaster office (MDRRMO). Citizens send a report with their GPS location in one tap, responders get the nearest assignment with a live ETA, and the dispatch desk sends area warnings and tracks hazards. Three parts share one Firebase project: a citizen app, a responder app, and a Windows desktop dispatch desk.", tech: ['React Native', 'Expo', 'Firebase', 'Cloud Functions', 'Python', 'PyQt6'] },
   { title: 'DHT11 Sensor Monitor', category: 'IoT', initials: 'DH', hue: 190, description: "A browser dashboard that reads live temperature and humidity from a DHT11 sensor — my first time wiring hardware data into a web page.", tech: ['HTML', 'JavaScript', 'DHT11'] },
   { title: 'Student Attendance System', category: 'Backend', initials: 'AS', hue: 210, description: 'A Django web app for managing student attendance, with admin accounts, attendance records, and a database-backed dashboard. Built as a class project.', tech: ['Python', 'Django', 'SQLite'], codeUrl: 'https://github.com/promptwel/attendance-system' },
   { title: 'Clinic QR System', category: 'Backend', initials: 'CQ', hue: 160, description: 'A Django app for a school clinic that generates QR codes for patient records and exports visit data to Excel, using pandas for reporting.', tech: ['Python', 'Django', 'QR Codes', 'Pandas'], codeUrl: 'https://github.com/promptwel/clinic' },
@@ -1020,7 +1020,7 @@ function openModal(index) {
   const project = projectsData[index];
   if (!project) return;
   modalBody.innerHTML = `
-    <div class="modal__image" style="--modal-hue: ${project.hue}"><span>${project.initials}</span></div>
+    <div class="modal__image" style="--modal-hue: ${project.hue}">${project.logo ? `<img src="${project.logo}" alt="${project.title} logo" width="120" height="120" style="border-radius:26px;box-shadow:0 4px 14px rgba(0,0,0,.25)">` : `<span>${project.initials}</span>`}</div>
     <span class="modal__tag">${project.category}</span>
     <h2>${project.title}</h2>
     <p>${project.description}</p>
