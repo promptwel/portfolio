@@ -549,7 +549,7 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
               <span class="about__stat-label">GitHub Repos</span>
             </div>
             <div class="about__stat">
-              <span class="about__stat-number" data-count="8">0</span>
+              <span class="about__stat-number" data-count="5">0</span>
               <span class="about__stat-label">Featured Projects</span>
             </div>
             <div class="about__stat">
@@ -618,8 +618,6 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
         <button class="projects__filter-btn active" data-filter="all">All</button>
         <button class="projects__filter-btn" data-filter="backend">Backend</button>
         <button class="projects__filter-btn" data-filter="mobile">Mobile &amp; Desktop</button>
-        <button class="projects__filter-btn" data-filter="frontend">Frontend</button>
-        <button class="projects__filter-btn" data-filter="ai">AI/ML</button>
         <button class="projects__filter-btn" data-filter="iot">IoT</button>
       </div>
       <div class="projects__grid">
@@ -642,18 +640,6 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
         <div class="project-card" data-category="backend">
           <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 160"><img src="clinic-qr-logo.png" alt="Clinic QR System logo" width="96" height="96" style="border-radius:22px;box-shadow:0 4px 14px rgba(0,0,0,.25)"></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="4">View Details</button></div></div>
           <div class="project-card__body"><span class="project-card__tag">Full Stack</span><h3 class="project-card__title">Clinic QR System</h3><p class="project-card__desc">A QR-code patient flow for a community clinic: one registration, one QR code, and dashboards for reception, doctors, lab, pharmacy, vaccination and admin, plus a phone-friendly patient portal.</p><div class="project-card__tech"><span>Python</span><span>Django</span><span>Bootstrap</span><span>QR Codes</span></div></div>
-        </div>
-        <div class="project-card" data-category="frontend">
-          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 280"><span>WD</span></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="5">View Details</button></div></div>
-          <div class="project-card__body"><span class="project-card__tag">Frontend</span><h3 class="project-card__title">Web Dev Class Project</h3><p class="project-card__desc">A static site built for a web development course requirement.</p><div class="project-card__tech"><span>HTML</span><span>CSS</span></div></div>
-        </div>
-        <div class="project-card" data-category="ai">
-          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 340"><span>GS</span></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="6">View Details</button></div></div>
-          <div class="project-card__body"><span class="project-card__tag">AI/ML</span><h3 class="project-card__title">Gesture Squadron — Neural Shooter</h3><p class="project-card__desc">A retro arcade shooter controlled by webcam hand gestures, built for a DICT AI training program.</p><div class="project-card__tech"><span>JavaScript</span><span>Canvas</span><span>TensorFlow.js</span></div></div>
-        </div>
-        <div class="project-card" data-category="ai">
-          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 30"><span>TM</span></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="7">View Details</button></div></div>
-          <div class="project-card__body"><span class="project-card__tag">AI/ML</span><h3 class="project-card__title">Teachable Machine Classifier</h3><p class="project-card__desc">An image classifier built with Google's Teachable Machine during a DICT AI training program.</p><div class="project-card__tech"><span>Teachable Machine</span><span>JavaScript</span></div></div>
         </div>
       </div>
     </div>
@@ -1016,9 +1002,6 @@ const projectsData = [
   { title: 'DHT11 Sensor Monitor', category: 'IoT', initials: 'DH', hue: 190, description: "A browser dashboard that reads live temperature and humidity from a DHT11 sensor — my first time wiring hardware data into a web page.", tech: ['HTML', 'JavaScript', 'DHT11'] },
   { title: 'Student Attendance System', category: 'Backend', initials: 'AS', hue: 210, description: 'A Django web app for managing student attendance, with admin accounts, attendance records, and a database-backed dashboard. Built as a class project.', tech: ['Python', 'Django', 'SQLite'], codeUrl: 'https://github.com/promptwel/attendance-system' },
   { title: 'Clinic QR System', category: 'Backend', initials: 'CQ', logo: 'clinic-qr-logo.png', hue: 160, description: "A Django system for a community clinic, built as a school project. A patient registers once and gets a personal QR code by e-mail; every station scans it to open the same record. Reception queues patients, doctors claim and verify arrivals before consulting, the lab and vaccination desks record results and dose plans, the pharmacy dispenses, and the admin sees reports, accounts and vaccine schedules. The patient portal is mobile first, with records, QR code and PDF, CSV and Excel exports. The repo has a one-command demo data seeder and a screenshot walkthrough of every role.", tech: ['Python', 'Django', 'Bootstrap 5', 'QR Codes', 'ReportLab', 'Pandas', 'SQLite / PostgreSQL'], codeUrl: 'https://github.com/promptwel/clinic-qr-system' },
-  { title: 'Web Dev Class Project', category: 'Frontend', initials: 'WD', hue: 280, description: 'A static HTML/CSS site built for a web development course requirement.', tech: ['HTML', 'CSS'] },
-  { title: 'Gesture Squadron — Neural Shooter', category: 'AI/ML', initials: 'GS', hue: 340, description: "A retro arcade shooter built for a DICT AI training program. Controlled by webcam hand gestures or keyboard, using JavaScript Canvas for rendering and TensorFlow.js for real-time gesture recognition.", tech: ['JavaScript', 'Canvas', 'TensorFlow.js'], codeUrl: 'https://github.com/promptwel/DICT_AI_sadiang-abay_8bit_game' },
-  { title: 'Teachable Machine Classifier', category: 'AI/ML', initials: 'TM', hue: 30, description: "An image classifier built during a DICT AI training program using Google's Teachable Machine, wired into a working browser demo.", tech: ['Teachable Machine', 'JavaScript'], codeUrl: 'https://github.com/promptwel/DICT_Teachable-machine' }
 ];
 
 function openModal(index) {
