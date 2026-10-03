@@ -257,7 +257,7 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
 .skills__category-title { font-size: 1.15rem; font-weight: var(--fw-700); margin-bottom: var(--space-xl); padding-bottom: var(--space-md); border-bottom: 2px solid var(--clr-border); color: var(--clr-accent); }
 .skill { margin-bottom: var(--space-lg); }
 .skill:last-child { margin-bottom: 0; }
-.skill__info { display: flex; justify-content: space-between; margin-bottom: var(--space-sm); }
+.skill__info { display: flex; justify-content: space-between; }
 .skill__name { font-size: 0.9rem; font-weight: var(--fw-500); }
 .skill__pct { font-size: 0.85rem; color: var(--clr-accent); font-weight: var(--fw-600); font-family: var(--ff-mono); }
 .skill__bar { height: 6px; background: var(--clr-bg-alt); border-radius: var(--radius-full); overflow: hidden; }
@@ -543,9 +543,6 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
           <p class="about__text">
             Hello! I'm Roel, a BS Information Technology student at ISUFST in San Enrique, Iloilo. I build small, real projects to actually learn — a Django attendance system, a QR-based clinic system, and an IoT sensor monitor, instead of just reading about how they're made.
           </p>
-          <p class="about__text">
-            Through DICT-sponsored AI training, I've also built a gesture-controlled arcade shooter using TensorFlow.js and an image classifier with Google's Teachable Machine. Most of what I know comes from class requirements and these training programs, pushed a bit further on my own.
-          </p>
           <div class="about__stats">
             <div class="about__stat">
               <span class="about__stat-number" data-count="17">0</span>
@@ -584,25 +581,26 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
         <div class="skills__category">
           <h3 class="skills__category-title">Frontend</h3>
           <div class="skills__items">
-            <div class="skill"><div class="skill__info"><span class="skill__name">HTML / CSS</span><span class="skill__pct">78%</span></div><div class="skill__bar"><div class="skill__fill" data-width="78"></div></div></div>
-            <div class="skill"><div class="skill__info"><span class="skill__name">JavaScript</span><span class="skill__pct">65%</span></div><div class="skill__bar"><div class="skill__fill" data-width="65"></div></div></div>
-            <div class="skill"><div class="skill__info"><span class="skill__name">Canvas API</span><span class="skill__pct">40%</span></div><div class="skill__bar"><div class="skill__fill" data-width="40"></div></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">HTML / CSS</span><span class="skill__pct">Intermediate</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">JavaScript</span><span class="skill__pct">Intermediate</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">TypeScript / React</span><span class="skill__pct">Intermediate</span></div></div>
           </div>
         </div>
         <div class="skills__category">
           <h3 class="skills__category-title">Backend</h3>
           <div class="skills__items">
-            <div class="skill"><div class="skill__info"><span class="skill__name">Python</span><span class="skill__pct">60%</span></div><div class="skill__bar"><div class="skill__fill" data-width="60"></div></div></div>
-            <div class="skill"><div class="skill__info"><span class="skill__name">Django</span><span class="skill__pct">55%</span></div><div class="skill__bar"><div class="skill__fill" data-width="55"></div></div></div>
-            <div class="skill"><div class="skill__info"><span class="skill__name">SQLite</span><span class="skill__pct">35%</span></div><div class="skill__bar"><div class="skill__fill" data-width="35"></div></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">Python</span><span class="skill__pct">Intermediate</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">Django</span><span class="skill__pct">Intermediate</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">Firebase</span><span class="skill__pct">Intermediate</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">Flask</span><span class="skill__pct">Beginner</span></div></div>
           </div>
         </div>
         <div class="skills__category">
           <h3 class="skills__category-title">AI &amp; Tools</h3>
           <div class="skills__items">
-            <div class="skill"><div class="skill__info"><span class="skill__name">TensorFlow.js</span><span class="skill__pct">35%</span></div><div class="skill__bar"><div class="skill__fill" data-width="35"></div></div></div>
-            <div class="skill"><div class="skill__info"><span class="skill__name">Teachable Machine</span><span class="skill__pct">30%</span></div><div class="skill__bar"><div class="skill__fill" data-width="30"></div></div></div>
-            <div class="skill"><div class="skill__info"><span class="skill__name">Git / GitHub</span><span class="skill__pct">70%</span></div><div class="skill__bar"><div class="skill__fill" data-width="70"></div></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">Teachable Machine</span><span class="skill__pct">Beginner</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">Arduino / ESP32</span><span class="skill__pct">Beginner</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">Git / GitHub</span><span class="skill__pct">Intermediate</span></div></div>
           </div>
         </div>
       </div>
