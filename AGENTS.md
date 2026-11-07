@@ -32,3 +32,6 @@ portfolio/
 - Stats use `data-count` attributes for counter animation
 - Screenshots: each project can have a `shots: [{ src, alt }]` array in `projectsData`; they render as a gallery in the details modal with a keyboard-friendly lightbox
 - Image files live in `images/<project>/` (resize to about 1200px wide, keep each file under ~200 KB); logos stay in the repo root
+- Contact form: `WEB3FORMS_KEY` (top of the contact script) holds the free web3forms.com access key; while it is empty the form falls back to a mailto: draft. The key is meant to be public
+- Card order = `data-project` index = `projectsData` order; keep the three in sync when adding or moving a project. Cards with screenshots use the first one as a cover (`project-card__cover`) plus a logo chip
+- Share tags (og:/twitter:) point at `og-image.png` (1200x630) on the Vercel URL

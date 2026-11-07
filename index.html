@@ -3,9 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Roel Sadiang-abay | BS Information Technology student at ISUFST building Django apps, IoT projects, and AI experiments.">
-  <title>Roel Sadiang-abay | IT Student & Developer</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>&#x1F310;</text></svg>">
+  <meta name="description" content="Roel Sadiang-abay, BS Information Technology student at ISUFST in Iloilo. Open to junior developer and freelance work: Python, Django, HTML, JavaScript, IoT and Windows tools.">
+  <title>Roel Sadiang-abay | Junior Developer (Python, Django, Windows tools)</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232563eb'/><text x='16' y='21.5' font-family='Arial,sans-serif' font-weight='700' font-size='15' text-anchor='middle' fill='white'>RS</text></svg>">
+  <link rel="canonical" href="https://sadiang-abay.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Roel Sadiang-abay | Junior Developer (Python, Django, Windows tools)">
+  <meta property="og:description" content="Roel Sadiang-abay, BS Information Technology student at ISUFST in Iloilo. Open to junior developer and freelance work: Python, Django, HTML, JavaScript, IoT and Windows tools.">
+  <meta property="og:url" content="https://sadiang-abay.vercel.app/">
+  <meta property="og:image" content="https://sadiang-abay.vercel.app/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Roel Sadiang-abay | Junior Developer (Python, Django, Windows tools)">
+  <meta name="twitter:description" content="Roel Sadiang-abay, BS Information Technology student at ISUFST in Iloilo. Open to junior developer and freelance work: Python, Django, HTML, JavaScript, IoT and Windows tools.">
+  <meta name="twitter:image" content="https://sadiang-abay.vercel.app/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -144,8 +156,8 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
   transition: all var(--transition-base); outline: none; white-space: nowrap;
 }
 .btn:focus-visible { outline: 2px solid var(--clr-accent); outline-offset: 2px; }
-.btn--primary { background: var(--clr-accent); color: #fff; border-color: transparent; }
-.btn--primary:hover { background: var(--clr-accent-hover); transform: translateY(-2px); box-shadow: 0 8px 24px var(--clr-accent-glow); }
+.btn--primary { background: #2563eb; color: #fff; border-color: transparent; }
+.btn--primary:hover { background: #1d4ed8; transform: translateY(-2px); box-shadow: 0 8px 24px var(--clr-accent-glow); }
 .btn--outline { background: transparent; color: var(--clr-accent); border-color: var(--clr-accent); }
 .btn--outline:hover { background: var(--clr-accent-light); transform: translateY(-2px); }
 .btn:active { transform: scale(0.97); }
@@ -202,6 +214,8 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
 .hero__name { opacity: 0; transform: scale(0.95); animation: heroScaleIn 0.8s var(--ease-entrance) 0.3s forwards; }
 .hero__title { opacity: 0; transform: translateY(15px); animation: heroFadeIn 0.6s var(--ease-entrance) 0.5s forwards; }
 .hero__description { opacity: 0; transform: translateY(15px); animation: heroFadeIn 0.6s var(--ease-entrance) 0.7s forwards; }
+.hero__role { font-family: var(--ff-mono); font-size: 0.85rem; line-height: 1.7; color: var(--clr-accent); max-width: 540px; margin: calc(var(--space-lg) * -0.4) 0 var(--space-lg); opacity: 0; transform: translateY(15px); animation: heroFadeIn 0.6s var(--ease-entrance) 0.6s forwards; }
+.hero__role strong { color: var(--clr-text); font-weight: var(--fw-600); }
 .hero__cta { opacity: 0; transform: translateY(15px); animation: heroFadeIn 0.6s var(--ease-entrance) 0.9s forwards; }
 .hero__socials { opacity: 0; animation: heroFadeIn 0.6s var(--ease-entrance) 1.1s forwards; }
 .hero__social-link { opacity: 0; transform: translateX(-10px); animation: heroSlideIn 0.5s var(--ease-entrance) forwards; }
@@ -259,20 +273,26 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
 .skill:last-child { margin-bottom: 0; }
 .skill__info { display: flex; justify-content: space-between; }
 .skill__name { font-size: 0.9rem; font-weight: var(--fw-500); }
-.skill__pct { font-size: 0.85rem; color: var(--clr-accent); font-weight: var(--fw-600); font-family: var(--ff-mono); }
+.skill__pct { text-align: right; font-size: 0.85rem; color: var(--clr-accent); font-weight: var(--fw-600); font-family: var(--ff-mono); }
 .skill__bar { height: 6px; background: var(--clr-bg-alt); border-radius: var(--radius-full); overflow: hidden; }
 .skill__fill { height: 100%; border-radius: var(--radius-full); background: var(--clr-accent); width: 0; transition: width 1s ease, box-shadow 0.5s ease; }
 .skill__fill[style*="width"] { box-shadow: 0 0 8px var(--clr-accent-glow); }
 
 .projects__filter { display: flex; justify-content: center; gap: var(--space-sm); margin-bottom: var(--space-3xl); flex-wrap: wrap; }
 .projects__filter-btn { padding: 0.5rem 1.25rem; border-radius: var(--radius-full); border: 1px solid var(--clr-border); background: var(--clr-bg-card); color: var(--clr-text-secondary); font-family: inherit; font-size: 0.9rem; font-weight: var(--fw-500); cursor: pointer; transition: all var(--transition-fast); }
+.form__status { min-height: 1.4em; margin-top: var(--space-sm); font-size: 0.9rem; color: var(--clr-text-secondary); }
+.form__status.is-error { color: var(--clr-error, #ef4444); }
+.form__status.is-ok { color: var(--clr-success, #10b981); }
 .projects__filter-btn:hover { border-color: var(--clr-accent); color: var(--clr-accent); }
-.projects__filter-btn.active { background: var(--clr-accent); color: #fff; border-color: var(--clr-accent); }
+.projects__filter-btn.active { background: #2563eb; color: #fff; border-color: var(--clr-accent); }
 .projects__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-2xl); }
 .project-card { background: var(--clr-bg-card); border: 1px solid var(--clr-border); border-radius: var(--radius-lg); overflow: hidden; transition: transform 0.4s var(--ease-micro), box-shadow 0.4s var(--ease-micro), border-color 0.3s ease; perspective: 1000px; }
 .project-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: var(--shadow-lg); border-color: var(--clr-accent); }
 .project-card__image { position: relative; overflow: hidden; aspect-ratio: 16 / 10; }
 .project-card__placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; font-weight: var(--fw-800); color: #fff; background: hsl(var(--hue, 210), 60%, 50%); }
+.project-card__placeholder { position: relative; }
+.project-card__cover { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: top left; }
+.project-card__chip { position: absolute; left: 12px; bottom: 12px; width: 40px; height: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45); background: #fff; }
 .project-card__placeholder span { text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); }
 .project-card__overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.65); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity var(--transition-base); }
 .project-card:hover .project-card__overlay { opacity: 1; }
@@ -381,6 +401,7 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
   .hero__inner { grid-template-columns: 1fr; text-align: center; }
   .hero__visual { display: none; }
   .hero__description { margin: 0 auto var(--space-2xl); }
+  .hero__role { margin-left: auto; margin-right: auto; }
   .hero__cta, .hero__socials { justify-content: center; }
   .about__grid { grid-template-columns: 1fr; }
   .about__image-wrapper { position: static; max-width: 250px; margin: 0 auto; }
@@ -509,9 +530,10 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
         <p class="hero__greeting">Hi, my name is</p>
         <h1 class="hero__name">Roel Sadiang-abay</h1>
         <h2 class="hero__title">I build <span class="text-accent">things</span> while I learn the craft.</h2>
+        <p class="hero__role">Open to <strong>junior developer</strong> and <strong>freelance</strong> work &middot; Python, Django, HTML, JavaScript, IoT &amp; Windows tools &middot; Iloilo, Philippines</p>
         <p class="hero__description">
-          I'm a BS Information Technology student at ISUFST building things to learn — Django web apps, a gesture-controlled arcade game with TensorFlow.js, and a few IoT sensor experiments along the way.
-        </p>
+            I'm a BS Information Technology student at ISUFST. I build small, real systems to learn: an emergency dispatch app, a clinic QR system, a Windows printer-driver installer, and IoT sensor dashboards.
+          </p>
         <div class="hero__cta">
           <a href="#projects" class="btn btn--primary">View my work</a>
           <a href="#contact" class="btn btn--text">Get in touch</a>
@@ -555,12 +577,12 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
         </div>
         <div class="about__content">
           <p class="about__text">
-            Hello! I'm Roel, a BS Information Technology student at ISUFST in San Enrique, Iloilo. I build small, real projects to actually learn — a Django attendance system, a QR-based clinic system, and an IoT sensor monitor, instead of just reading about how they're made.
+            Hello! I'm Roel, a BS Information Technology student at ISUFST in San Enrique, Iloilo. I build small, real projects to actually learn: an emergency dispatch app for a town disaster office, a QR-based clinic system, a Windows tool that installs printer drivers, and IoT sensor dashboards. I'm looking for a junior developer role or freelance work.
           </p>
           <div class="about__stats">
             <div class="about__stat">
-              <span class="about__stat-number" data-count="17">0</span>
-              <span class="about__stat-label">GitHub Repos</span>
+              <span class="about__stat-number" data-count="19">0</span>
+              <span class="about__stat-label">Public Repos</span>
             </div>
             <div class="about__stat">
               <span class="about__stat-number" data-count="6">0</span>
@@ -568,10 +590,10 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
             </div>
             <div class="about__stat">
               <span class="about__stat-number" data-count="2">0</span>
-              <span class="about__stat-label">DICT AI Trainings</span>
+              <span class="about__stat-label">DICT Programs</span>
             </div>
             <div class="about__stat">
-              <span class="about__stat-number" data-count="8">0</span>
+              <span class="about__stat-number" data-count="11">0</span>
               <span class="about__stat-label">Technologies Used</span>
             </div>
           </div>
@@ -589,32 +611,33 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
       <div class="section__header">
         <h2 class="section__title">Skills &amp; technologies</h2>
         <div class="section__divider"></div>
-        <p class="section__subtitle">Technologies I've been working with recently</p>
+        <p class="section__subtitle">Technologies I've used, and the projects where I used them</p>
       </div>
       <div class="skills__grid">
         <div class="skills__category">
           <h3 class="skills__category-title">Frontend</h3>
           <div class="skills__items">
-            <div class="skill"><div class="skill__info"><span class="skill__name">HTML / CSS</span><span class="skill__pct">Intermediate</span></div></div>
-            <div class="skill"><div class="skill__info"><span class="skill__name">JavaScript</span><span class="skill__pct">Intermediate</span></div></div>
-            <div class="skill"><div class="skill__info"><span class="skill__name">TypeScript / React</span><span class="skill__pct">Intermediate</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">HTML / CSS</span><span class="skill__pct">Portfolio, DHT11</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">JavaScript</span><span class="skill__pct">Portfolio, DHT11, RESQ</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">TypeScript / React</span><span class="skill__pct">RESQ (React Native)</span></div></div>
           </div>
         </div>
         <div class="skills__category">
           <h3 class="skills__category-title">Backend</h3>
           <div class="skills__items">
-            <div class="skill"><div class="skill__info"><span class="skill__name">Python</span><span class="skill__pct">Intermediate</span></div></div>
-            <div class="skill"><div class="skill__info"><span class="skill__name">Django</span><span class="skill__pct">Intermediate</span></div></div>
-            <div class="skill"><div class="skill__info"><span class="skill__name">Firebase</span><span class="skill__pct">Intermediate</span></div></div>
-            <div class="skill"><div class="skill__info"><span class="skill__name">Flask</span><span class="skill__pct">Beginner</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">Python</span><span class="skill__pct">Django apps, RESQ desk</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">Django</span><span class="skill__pct">Clinic QR, RFID, Attendance</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">Firebase</span><span class="skill__pct">RESQ</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">Flask</span><span class="skill__pct">Familiar</span></div></div>
           </div>
         </div>
         <div class="skills__category">
           <h3 class="skills__category-title">AI &amp; Tools</h3>
           <div class="skills__items">
-            <div class="skill"><div class="skill__info"><span class="skill__name">Teachable Machine</span><span class="skill__pct">Beginner</span></div></div>
-            <div class="skill"><div class="skill__info"><span class="skill__name">Arduino / ESP32</span><span class="skill__pct">Beginner</span></div></div>
-            <div class="skill"><div class="skill__info"><span class="skill__name">Git / GitHub</span><span class="skill__pct">Intermediate</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">Teachable Machine</span><span class="skill__pct">DICT AI training</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">Arduino / ESP32</span><span class="skill__pct">DHT11, DICT IoT</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">PowerShell (Windows tools)</span><span class="skill__pct">Printer Driver Installer</span></div></div>
+            <div class="skill"><div class="skill__info"><span class="skill__name">Git / GitHub</span><span class="skill__pct">All projects</span></div></div>
           </div>
         </div>
       </div>
@@ -636,28 +659,28 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
       </div>
       <div class="projects__grid">
         <div class="project-card" data-category="mobile">
-          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 5"><img src="resq-logo.png" alt="RESQ logo" width="96" height="96" style="border-radius:22px;box-shadow:0 4px 14px rgba(0,0,0,.25)"></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="0">View Details</button></div></div>
+          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 5"><img class="project-card__cover" src="images/resq/desk-dispatch.jpg" alt="" width="1200" height="750"><img class="project-card__chip" src="resq-logo.png" alt="RESQ logo" width="40" height="40"></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="0">View Details</button></div></div>
           <div class="project-card__body"><span class="project-card__tag">Mobile &amp; Desktop</span><h3 class="project-card__title">RESQ — MDRRMO Dispatch</h3><p class="project-card__desc">One-tap emergency reporting for citizens on Android, plus a Windows desktop dispatch desk for the town MDRRMO.</p><div class="project-card__tech"><span>React Native</span><span>Firebase</span><span>Python</span></div></div>
         </div>
+        <div class="project-card" data-category="backend">
+          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 160"><img class="project-card__cover" src="images/clinic/admin-dashboard.jpg" alt="" width="1200" height="750"><img class="project-card__chip" src="clinic-qr-logo.png" alt="Clinic QR System logo" width="40" height="40"></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="1">View Details</button></div></div>
+          <div class="project-card__body"><span class="project-card__tag">Full Stack</span><h3 class="project-card__title">Clinic QR System</h3><p class="project-card__desc">A QR-code patient flow for a community clinic: one registration, one QR code, and dashboards for reception, doctors, lab, pharmacy, vaccination and admin, plus a phone-friendly patient portal.</p><div class="project-card__tech"><span>Python</span><span>Django</span><span>Bootstrap</span><span>QR Codes</span></div></div>
+        </div>
         <div class="project-card" data-category="mobile">
-          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 215"><img src="printer-logo.png" alt="Printer Driver Installer logo" width="96" height="96" style="border-radius:22px;box-shadow:0 4px 14px rgba(0,0,0,.25)"></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="1">View Details</button></div></div>
+          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 215"><img class="project-card__cover" src="images/printer/search.png" alt="" width="1200" height="750"><img class="project-card__chip" src="printer-logo.png" alt="Printer Driver Installer logo" width="40" height="40"></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="2">View Details</button></div></div>
           <div class="project-card__body"><span class="project-card__tag">Desktop</span><h3 class="project-card__title">Printer Driver Installer</h3><p class="project-card__desc">A Windows tool that finds a printer driver by name and installs it with no wizard, including Canon, Epson and Brother downloads.</p><div class="project-card__tech"><span>PowerShell</span><span>Windows Forms</span><span>C#</span></div></div>
         </div>
         <div class="project-card" data-category="backend">
-          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 175"><img src="rfid-logo.png" alt="RFID Train Station logo" width="96" height="96" style="border-radius:22px;box-shadow:0 4px 14px rgba(0,0,0,.25)"></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="2">View Details</button></div></div>
+          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 175"><img class="project-card__cover" src="images/rfid/home.jpg" alt="" width="1200" height="750"><img class="project-card__chip" src="rfid-logo.png" alt="RFID Train Station logo" width="40" height="40"></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="3">View Details</button></div></div>
           <div class="project-card__body"><span class="project-card__tag">Backend &amp; IoT</span><h3 class="project-card__title">RFID Train Station</h3><p class="project-card__desc">A tap-to-ride transit payment system with reloadable RFID cards, fare discounts, and cashier and admin workflows.</p><div class="project-card__tech"><span>Python</span><span>Django</span><span>REST API</span><span>RFID</span></div></div>
         </div>
         <div class="project-card" data-category="iot">
-          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 190"><span>DH</span></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="3">View Details</button></div></div>
+          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 190"><span>DH</span></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="4">View Details</button></div></div>
           <div class="project-card__body"><span class="project-card__tag">IoT</span><h3 class="project-card__title">DHT11 Sensor Monitor</h3><p class="project-card__desc">A browser dashboard that reads live temperature and humidity from a DHT11 sensor.</p><div class="project-card__tech"><span>HTML</span><span>JavaScript</span><span>DHT11</span></div></div>
         </div>
         <div class="project-card" data-category="backend">
-          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 210"><span>AS</span></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="4">View Details</button></div></div>
+          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 210"><span>AS</span></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="5">View Details</button></div></div>
           <div class="project-card__body"><span class="project-card__tag">Backend</span><h3 class="project-card__title">Student Attendance System</h3><p class="project-card__desc">A Django app for tracking student attendance, built as a class requirement.</p><div class="project-card__tech"><span>Python</span><span>Django</span><span>SQLite</span></div></div>
-        </div>
-        <div class="project-card" data-category="backend">
-          <div class="project-card__image"><div class="project-card__placeholder" style="--hue: 160"><img src="clinic-qr-logo.png" alt="Clinic QR System logo" width="96" height="96" style="border-radius:22px;box-shadow:0 4px 14px rgba(0,0,0,.25)"></div><div class="project-card__overlay"><button class="project-card__view-btn" data-project="5">View Details</button></div></div>
-          <div class="project-card__body"><span class="project-card__tag">Full Stack</span><h3 class="project-card__title">Clinic QR System</h3><p class="project-card__desc">A QR-code patient flow for a community clinic: one registration, one QR code, and dashboards for reception, doctors, lab, pharmacy, vaccination and admin, plus a phone-friendly patient portal.</p><div class="project-card__tech"><span>Python</span><span>Django</span><span>Bootstrap</span><span>QR Codes</span></div></div>
         </div>
       </div>
     </div>
@@ -742,10 +765,6 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
             <div class="contact__info-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
             <div><h4>Location</h4><p>San Enrique, Iloilo</p></div>
           </div>
-          <div class="contact__info-item">
-            <div class="contact__info-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-            <div><h4>Phone</h4><a href="tel:+639542712345">0954 271 2345</a></div>
-          </div>
           <div class="contact__socials">
             <a href="https://github.com/promptwel" class="contact__social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg></a>
           </div>
@@ -755,7 +774,9 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
           <div class="form__group"><label for="formEmail" class="form__label">Email</label><input type="email" id="formEmail" class="form__input" placeholder="john@example.com" required autocomplete="email"><span class="form__error" role="alert"></span></div>
           <div class="form__group"><label for="formSubject" class="form__label">Subject</label><input type="text" id="formSubject" class="form__input" placeholder="Project Inquiry" required><span class="form__error" role="alert"></span></div>
           <div class="form__group"><label for="formMessage" class="form__label">Message</label><textarea id="formMessage" class="form__textarea" rows="5" placeholder="Tell me about your project..." required></textarea><span class="form__error" role="alert"></span></div>
+          <input type="checkbox" name="botcheck" id="botcheck" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
           <button type="submit" class="btn btn--primary form__submit">Send Message<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg></button>
+          <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
     </div>
@@ -1024,11 +1045,11 @@ const modalBackdrop = modal.querySelector('.modal__backdrop');
 
 const projectsData = [
   { title: 'RESQ — MDRRMO Dispatch', category: 'Mobile & Desktop', initials: 'RQ', logo: 'resq-logo.png', hue: 5, description: "An emergency reporting and dispatch system for a municipal disaster office (MDRRMO). Citizens send a report with their GPS location in one tap, responders get the nearest assignment with a live ETA, and the dispatch desk sends area warnings and tracks hazards. Three parts share one Firebase project: a citizen app, a responder app, and a Windows desktop dispatch desk.", tech: ['React Native', 'Expo', 'Firebase', 'Cloud Functions', 'Python', 'PyQt6'], codeUrl: 'https://github.com/promptwel/resq-showcase', shots: [{ src: "images/resq/citizen-home.jpg", alt: "Citizen app home screen with the emergency buttons" }, { src: "images/resq/citizen-status.jpg", alt: "Report status: help is on the way, with the incident pin and a call button" }, { src: "images/resq/citizen-dark.jpg", alt: "Citizen app in dark mode" }, { src: "images/resq/desk-dispatch.jpg", alt: "Windows dispatch desk: pending reports, units and the live map" }] },
+  { title: 'Clinic QR System', category: 'Backend', initials: 'CQ', logo: 'clinic-qr-logo.png', hue: 160, description: "A Django system for a community clinic, built as a school project. A patient registers once and gets a personal QR code by e-mail; every station scans it to open the same record. Reception queues patients, doctors claim and verify arrivals before consulting, the lab and vaccination desks record results and dose plans, the pharmacy dispenses, and the admin sees reports, accounts and vaccine schedules. The patient portal is mobile first, with records, QR code and PDF, CSV and Excel exports. The repo has a one-command demo data seeder and a screenshot walkthrough of every role.", tech: ['Python', 'Django', 'Bootstrap 5', 'QR Codes', 'ReportLab', 'Pandas', 'SQLite / PostgreSQL'], codeUrl: 'https://github.com/promptwel/clinic-qr-system', shots: [{ src: "images/clinic/admin-dashboard.jpg", alt: "Admin dashboard" }, { src: "images/clinic/admin-reports.jpg", alt: "Admin reports" }, { src: "images/clinic/doctor-consultation.jpg", alt: "Doctor consultation form with medication prescription" }, { src: "images/clinic/vaccines.jpg", alt: "Vaccine management" }] },
   { title: 'Printer Driver Installer', category: 'Desktop', initials: 'PD', logo: 'printer-logo.png', hue: 215, description: "A Windows tool that finds and installs a printer driver from the printer's name. It searches the drivers already on the PC, the ones built into Windows, and Microsoft's Update Catalog. For Canon, Epson and Brother it opens the vendor's support page for the model, watches the Downloads folder, checks the file is signed by the real vendor, unpacks the driver and installs it with no installer wizard, then registers the printer driver by name and can create a network printer from an IP address. Tested with real Brother, Epson, Lexmark, Kyocera and HP driver installs, each removed afterwards.", tech: ['PowerShell', 'Windows Forms', 'C#', 'pnputil', 'Windows Update Catalog'], codeUrl: 'https://github.com/promptwel/printer', shots: [{ src: "images/printer/search.png", alt: "Searching Microsoft's Update Catalog for a printer model" }, { src: "images/printer/watch.png", alt: "Vendor row for Canon: opens a model-specific page, then watches Downloads for the driver" }, { src: "images/printer/install.png", alt: "Install log: driver added to the Windows driver store and registered by name" }] },
   { title: 'RFID Train Station', category: 'Backend', initials: 'RT', logo: 'rfid-logo.png', hue: 175, description: "A Django transit payment system for reloadable RFID cards. Passengers tap to ride and are charged a station-based fare with student, senior, and PWD discounts. Cashiers sell and reload cards, admins see revenue reports, and a Python serial bridge connects a real RFID reader to the REST API. Money changes use atomic database transactions with an audit trail.", tech: ['Python', 'Django', 'REST API', 'RFID', 'SQLite / PostgreSQL'], codeUrl: 'https://github.com/promptwel/RFID_Trains_Station', shots: [{ src: "images/rfid/home.jpg", alt: "Home page" }, { src: "images/rfid/passenger.jpg", alt: "Passenger view" }, { src: "images/rfid/cashier.jpg", alt: "Cashier screen for selling and reloading cards" }, { src: "images/rfid/admin.jpg", alt: "Admin dashboard with revenue reports" }] },
   { title: 'DHT11 Sensor Monitor', category: 'IoT', initials: 'DH', hue: 190, description: "A browser dashboard that reads live temperature and humidity from a DHT11 sensor — my first time wiring hardware data into a web page.", tech: ['HTML', 'JavaScript', 'DHT11'] },
   { title: 'Student Attendance System', category: 'Backend', initials: 'AS', hue: 210, description: 'A Django web app for managing student attendance, with admin accounts, attendance records, and a database-backed dashboard. Built as a class project.', tech: ['Python', 'Django', 'SQLite'], codeUrl: 'https://github.com/promptwel/attendance-system' },
-  { title: 'Clinic QR System', category: 'Backend', initials: 'CQ', logo: 'clinic-qr-logo.png', hue: 160, description: "A Django system for a community clinic, built as a school project. A patient registers once and gets a personal QR code by e-mail; every station scans it to open the same record. Reception queues patients, doctors claim and verify arrivals before consulting, the lab and vaccination desks record results and dose plans, the pharmacy dispenses, and the admin sees reports, accounts and vaccine schedules. The patient portal is mobile first, with records, QR code and PDF, CSV and Excel exports. The repo has a one-command demo data seeder and a screenshot walkthrough of every role.", tech: ['Python', 'Django', 'Bootstrap 5', 'QR Codes', 'ReportLab', 'Pandas', 'SQLite / PostgreSQL'], codeUrl: 'https://github.com/promptwel/clinic-qr-system', shots: [{ src: "images/clinic/admin-dashboard.jpg", alt: "Admin dashboard" }, { src: "images/clinic/admin-reports.jpg", alt: "Admin reports" }, { src: "images/clinic/doctor-consultation.jpg", alt: "Doctor consultation form with medication prescription" }, { src: "images/clinic/vaccines.jpg", alt: "Vaccine management" }] },
 ];
 
 let currentShots = [];
@@ -1170,6 +1191,50 @@ Object.keys(validators).forEach(id => {
   });
 });
 
+const WEB3FORMS_KEY = ''; // free access key from web3forms.com; while empty, the form opens the visitor's email app instead
+const CONTACT_EMAIL = 'sadiangabayroel@isufst.edu.ph';
+
+async function sendContact() {
+  const submitBtn = contactForm.querySelector('.form__submit');
+  const status = document.getElementById('formStatus');
+  const original = submitBtn.innerHTML;
+  const data = {
+    name: document.getElementById('formName').value.trim(),
+    email: document.getElementById('formEmail').value.trim(),
+    subject: document.getElementById('formSubject').value.trim(),
+    message: document.getElementById('formMessage').value.trim()
+  };
+  if (document.getElementById('botcheck').checked) return; // bots tick the hidden box
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Sending...';
+  status.className = 'form__status';
+  status.textContent = '';
+  try {
+    if (WEB3FORMS_KEY) {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ access_key: WEB3FORMS_KEY, from_name: 'Portfolio contact form', ...data })
+      });
+      const json = await res.json();
+      if (!res.ok || !json.success) throw new Error(json.message || 'The message was not accepted.');
+      status.textContent = 'Message sent. Thank you, I will reply by email.';
+      status.classList.add('is-ok');
+      contactForm.reset();
+    } else {
+      const body = data.message + '\n\n' + data.name + ' <' + data.email + '>';
+      window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent(data.subject) + '&body=' + encodeURIComponent(body);
+      status.textContent = 'Opening your email app. If nothing opens, write to ' + CONTACT_EMAIL + '.';
+    }
+  } catch (err) {
+    status.textContent = 'Sorry, that did not send. Please email ' + CONTACT_EMAIL + ' directly.';
+    status.classList.add('is-error');
+  } finally {
+    submitBtn.innerHTML = original;
+    submitBtn.disabled = false;
+  }
+}
+
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   let allValid = true;
@@ -1178,24 +1243,7 @@ contactForm.addEventListener('submit', (e) => {
     if (input) { if (!validateField(input)) allValid = false; }
   });
   if (allValid) {
-    const submitBtn = contactForm.querySelector('.form__submit');
-    const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = 'Sending...';
-    submitBtn.disabled = true;
-    submitBtn.style.animation = 'pulse 1.5s ease-in-out infinite';
-
-    setTimeout(() => {
-      submitBtn.innerHTML = 'Message Sent!';
-      submitBtn.style.animation = '';
-      submitBtn.style.animation = 'countPulse 0.4s var(--ease-micro)';
-      setTimeout(() => {
-        contactForm.reset();
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-        submitBtn.style.animation = '';
-        document.querySelectorAll('.form__error').forEach(el => el.textContent = '');
-      }, 1500);
-    }, 1500);
+    sendContact();
   } else {
     const firstError = contactForm.querySelector('.form__input.error, .form__textarea.error');
     if (firstError) firstError.focus();
