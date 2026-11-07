@@ -30,3 +30,5 @@ portfolio/
 - Projects array lives in the inline `<script>` at the bottom of `index.html`
 - Skill percentages use `data-width` attributes on `.skill__fill` elements
 - Stats use `data-count` attributes for counter animation
+- Screenshots: each project can have a `shots: [{ src, alt }]` array in `projectsData`; they render as a gallery in the details modal with a keyboard-friendly lightbox
+- Image files live in `images/<project>/` (resize to about 1200px wide, keep each file under ~200 KB); logos stay in the repo root
