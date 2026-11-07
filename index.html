@@ -358,7 +358,7 @@ h1, h2, h3, h4 { font-family: var(--ff-display); text-wrap: balance; }
 .modal__body .modal__links { display: flex; gap: var(--space-md); }
 .modal__body .modal__links .btn { font-size: 0.85rem; padding: 0.6rem 1.25rem; }
 .modal__body .modal__gallery { display: flex; gap: var(--space-sm); overflow-x: auto; padding-bottom: var(--space-sm); margin-bottom: var(--space-lg); scrollbar-width: thin; }
-.modal__shot { flex: 0 0 auto; padding: 0; border: 1px solid var(--clr-border); border-radius: var(--radius-md); background: var(--clr-bg-alt); overflow: hidden; cursor: zoom-in; transition: border-color 0.2s, transform 0.2s; }
+.modal__shot { flex: 0 0 auto; min-width: 96px; min-height: 120px; padding: 0; border: 1px solid var(--clr-border); border-radius: var(--radius-md); background: var(--clr-bg-alt); overflow: hidden; cursor: zoom-in; transition: border-color 0.2s, transform 0.2s; }
 .modal__shot:hover, .modal__shot:focus-visible { border-color: var(--clr-accent); transform: translateY(-2px); outline: none; }
 .modal__shot img { display: block; height: 120px; width: auto; }
 .lightbox { position: fixed; inset: 0; z-index: 3000; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--space-md); padding: var(--space-lg); background: rgba(0, 0, 0, 0.88); opacity: 0; visibility: hidden; transition: opacity 0.2s, visibility 0.2s; }
@@ -1038,7 +1038,7 @@ function openModal(index) {
   if (!project) return;
   currentShots = project.shots || [];
   const gallery = currentShots.length
-    ? `<div class="modal__gallery">${currentShots.map((sh, i) => `<button type="button" class="modal__shot" data-shot="${i}" aria-label="Enlarge screenshot ${i + 1} of ${currentShots.length}: ${sh.alt}"><img src="${sh.src}" alt="${sh.alt}" height="120" loading="lazy"></button>`).join('')}</div>`
+    ? `<div class="modal__gallery">${currentShots.map((sh, i) => `<button type="button" class="modal__shot" data-shot="${i}" aria-label="Enlarge screenshot ${i + 1} of ${currentShots.length}: ${sh.alt}"><img src="${sh.src}" alt="${sh.alt}" height="120" decoding="async"></button>`).join('')}</div>`
     : '';
   modalBody.innerHTML = `
     <div class="modal__image" style="--modal-hue: ${project.hue}">${project.logo ? `<img src="${project.logo}" alt="${project.title} logo" width="120" height="120" style="border-radius:26px;box-shadow:0 4px 14px rgba(0,0,0,.25)">` : `<span>${project.initials}</span>`}</div>
